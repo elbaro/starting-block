@@ -9,10 +9,8 @@ import (
 
 // Zshrc installs `~/.zshrc` including slimzsh.
 var terminalPadding = func() Component {
-	gtkCss := `VteTerminal,
-TerminalScreen {
+	gtkCss := `vte-terminal {
     padding: 30px 30px 30px 30px;
-    -VteTerminal-inner-border: 30px 30px 30px 30px;
 }
 	`
 	check := func() (bool, string) {
