@@ -10,7 +10,8 @@ set -g @plugin 'tmux-plugins/tmux-cpu'
 
 #### 
 #### Basics
-#### 
+####
+set -g default-terminal "screen-256color"
 set-option -g default-shell /bin/zsh
 bind r source-file ~/.tmux.conf
 
